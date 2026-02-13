@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        .skill-tag {
+            background-color: #f1f5f9;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: #e2e8f0;
+            transform: translateY(-2px);
+        }
+
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        .exp-detail-list {
+            position: relative;
+        }
+        .exp-detail-list li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .exp-detail-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-100 selection:text-blue-700">
+
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="space-x-8 text-sm font-medium">
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+            <a href="#Skills" class="hover:text-blue-600 transition">Skills</a>
+        </div>
+    </div>
+</nav>
+
+<main class="max-w-5xl mx-auto px-6 pt-32 pb-20">
+    <section id="about" class="mb-24">
+        <div class="max-w-3xl">
+            <span class="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-4 block">Backend Developer</span>
+            <h1 class="text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                실수를 줄이는 환경을 만들고<br>기억보다 기록의 힘을 믿는 <span class="text-blue-600">배세민</span>입니다.
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                일관된 컨벤션을 준수하며 변수명 하나, 커밋 메시지 한 줄의 디테일을 시스템 완성도의 핵심 가치로 여깁니다.
+                로직과 API 통신 구조를 시각화하는 과정을 즐기며, 작업 과정을 기록하고 공유함으로써 팀의 생산성을 높이는 데 보람을 느낍니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience" class="mb-24">
+        <h2 class="text-2xl font-bold mb-10 flex items-center">
+            <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">
+                <i class="fas fa-briefcase text-sm"></i>
+            </span>
+            Experience
+        </h2>
+        <div class="space-y-16 border-l-2 border-slate-100 ml-4 pl-8">
+            <div class="relative">
+                <div class="absolute -left-[41px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
+                <div>
+                    <div class="mb-6">
+                        <span class="text-sm font-bold text-blue-500 uppercase tracking-wider mb-1 block">2023.01 ~</span>
+                        <h3 class="text-2xl font-bold text-slate-900">낸드소프트</h3>
+                        <p class="text-slate-500 font-medium">Backend Developer</p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-3 flex items-center">
+                                <span class="w-1.5 h-1.5 bg-slate-400 rounded-full mr-2"></span>
+                                레거시 코드 리팩토링 및 시스템 안정화
+                            </h4>
+                            <ul class="exp-detail-list text-slate-600 ml-4">
+                                <li>미흡한 방어 코드 개선, 유효성 검사 강화로 DB 정합성 향상</li>
+                                <li>매직 넘버 상수화, Enum 활용으로 가독성 증가</li>
+                                <li>공통 응답, 전역 핸들러 도입으로 API 인터페이스 표준화</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-3 flex items-center">
+                                <span class="w-1.5 h-1.5 bg-slate-400 rounded-full mr-2"></span>
+                                운영 지원
+                            </h4>
+                            <ul class="exp-detail-list text-slate-600 ml-4">
+                                <li>실시간 모니터링으로 병목 구간 파악 및 분석</li>
+                                <li>고객사 요청 데이터 통계 추출</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-3 flex items-center">
+                                <span class="w-1.5 h-1.5 bg-slate-400 rounded-full mr-2"></span>
+                                지식 자산화 및 온보딩 지원
+                            </h4>
+                            <ul class="exp-detail-list text-slate-600 ml-4">
+                                <li>신규 입사자 대상 IntelliJ 및 주요 툴 활용 교육</li>
+                                <li>작업 과정 내 주요 이슈 및 특이사항 기록으로 기술 자산화 및 재발 방지</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills" class="mb-24">
+        <h2 class="text-2xl font-bold mb-10 flex items-center">
+                <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">
+                    <i class="fas fa-code text-sm"></i>
+                </span>
+            Skills
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-slate-900 mb-4 text-lg">Backend</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-3 py-1 rounded-md text-sm">Java</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-sm">Spring</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-sm">Spring Boot</span>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-slate-900 mb-4 text-lg">DB</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-3 py-1 rounded-md text-sm">MariaDB</span>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-slate-900 mb-4 text-lg">Tools</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-3 py-1 rounded-md text-sm">IntelliJ</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-sm">Git</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-sm">Notion</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-white border-t border-slate-100 py-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-slate-400 text-sm mb-4">© 2026 Bae Se-min. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 text-slate-400">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
